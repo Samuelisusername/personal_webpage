@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Gair - Machine Learning & Software Engineer</title>
+    <style>
+        /* Modern Dark Theme for ML/SWE */
+        :root {
+            --bg: #0d1117;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --secondary: #8b949e;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --tag-bg: #1f6feb;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        header {
+            text-align: left;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 0;
+        }
+        .contact {
+            color: var(--secondary);
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+        .quote {
+            font-style: italic;
+            color: var(--secondary);
+            margin-top: 25px;
+            padding: 15px;
+            border-left: 4px solid var(--accent);
+            background: var(--card-bg);
+            border-radius: 0 4px 4px 0;
+        }
+        h2 {
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        .item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+        .item h3 {
+            margin: 0 0 5px 0;
+            color: #ffffff;
+            font-size: 1.2em;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--secondary);
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .tags {
+            margin-top: 15px;
+        }
+        .tag {
+            background: var(--tag-bg);
+            color: #ffffff;
+            font-size: 0.75em;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-right: 6px;
+            font-family: "SFMono-Regular", Consolas, monospace;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        /* Hides citation tags from the visual webpage while preserving them in the code */
+        .cite { 
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Samuel Gair<span class="cite">[cite: 2]</span></h1>
+            <p class="subtitle">ETH Computer Science MSc | Machine Intelligence & Data Systems<span class="cite">[cite: 2]</span></p>
+            <p class="contact">samuel@gair.org | +41 76 722 5359<span class="cite">[cite: 2]</span></p>
+            <div class="quote">
+                "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim." – Edsger W. Dijkstra
+            </div>
+        </header>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="item">
+            <h3>ETH Zürich<span class="cite">[cite: 2]</span></h3>
+            <div class="meta">
+                <span>MSc Computer Science (Minor: Data Management Systems)<span class="cite">[cite: 2]</span></span>
+                <span>Sep 2025 – Jul 2027<span class="cite">[cite: 2]</span></span>
+            </div>
+        </div>
+        <div class="item">
+            <h3>ETH Zürich<span class="cite">[cite: 2]</span></h3>
+            <div class="meta">
+                <span>BSc Computer Science (Major: Machine Intelligence)<span class="cite">[cite: 2]</span></span>
+                <span>Sep 2022 – Jul 2025<span class="cite">[cite: 2]</span></span>
+            </div>
+            <ul>
+                <li>GPA: 5.1/6.0<span class="cite">[cite: 2]</span></li>
+                <li>Relevant Coursework: Probabilistic Artificial Intelligence, Parallel Programming, Systems Programming (All Grade 5.0)<span class="cite">[cite: 2]</span></li>
+            </ul>
+        </div>
+
+        <!-- Research & Projects -->
+        <h2>Research & Engineering Projects</h2>
+        <div class="item">
+            <h3>High-Dimensional Signal Deconvolution Research<span class="cite">[cite: 2]</span></h3>
+            <ul>
+                <li>Pioneered a Python/R machine learning framework for proteomic deconvolution, achieving a 57.3% reduction in Mean Absolute Error.<span class="cite">[cite: 2]</span></li>
+                <li>Architected an end-to-end ML pipeline resulting in a co-authored poster presentation at ECCB 2026.<span class="cite">[cite: 2]</span></li>
+            </ul>
+            <div class="tags">
+                <span class="tag">Python</span> <span class="tag">R</span> <span class="tag">Machine Learning</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Large Language Models & AI Safety<span class="cite">[cite: 2]</span></h3>
+            <ul>
+                <li>Engineered RAG pipelines in PyTorch and Hugging Face to mitigate LLM hallucinations.<span class="cite">[cite: 2]</span></li>
+                <li>Executed model-inversion attacks to reconstruct prompts, bypassing vision-language safety filters.<span class="cite">[cite: 2]</span></li>
+            </ul>
+            <div class="tags">
+                <span class="tag">PyTorch</span> <span class="tag">Hugging Face</span> <span class="tag">LLMs</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <h3>Advanced Machine Learning for Healthcare & Time-Series<span class="cite">[cite: 2]</span></h3>
+            <ul>
+                <li>Engineered imputation-free Transformers in PyTorch for highly irregular time-series data.<span class="cite">[cite: 2]</span></li>
+                <li>Developed a CNN to detect pneumonia, utilizing Grad-CAM to map diagnostic pixel regions.<span class="cite">[cite: 2]</span></li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>Machine Learning for Genomics<span class="cite">[cite: 3]</span></h3>
+            <ul>
+                <li>Top 10% Class Award.<span class="cite">[cite: 3]</span> Built PyTorch deep generative models (scVI/scANVI) to annotate single-cell profiles.<span class="cite">[cite: 3]</span></li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>Low-Level Systems & Game Development<span class="cite">[cite: 2]</span></h3>
+            <ul>
+                <li>Architected a highly scalable, object-oriented simulation environment in C# with custom dynamic pathfinding.<span class="cite">[cite: 2]</span></li>
+                <li>Engineered an x86 virtual memory simulator in C managing multi-level page table translations.<span class="cite">[cite: 2]</span></li>
+                <li>Built a thread-safe traffic simulation system in Java utilizing ReentrantLock and monitors.<span class="cite">[cite: 3]</span></li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <h2>Skills & Technologies</h2>
+        <div class="item">
+            <p><strong>Machine Learning & AI:</strong> Python, PyTorch, Transformers, Scikit-learn, XGBoost, NumPy, Pandas, SciPy, tsfresh, R, Apache Spark, Hadoop<span class="cite">[cite: 3]</span></p>
+            <p><strong>Systems & Engineering:</strong> C/C++, Java, SQL, Unix/Linux, NOSQL<span class="cite">[cite: 3]</span></p>
+        </div>
+
+        <!-- Experience & Extras -->
+        <h2>Experience & Details</h2>
+        <div class="item">
+            <h3>ETH Computer Science Library Assistant<span class="cite">[cite: 3]</span></h3>
+            <div class="meta"><span>December 2024 – Present<span class="cite">[cite: 3]</span></span></div>
+            <ul>
+                <li>Managed computer science literature and directed library social media.<span class="cite">[cite: 3]</span></li>
+            </ul>
+        </div>
+        <div class="item">
+            <p><strong>Languages:</strong> English (native), German (native), French (B2), Polish (B2)<span class="cite">[cite: 3]</span></p>
+            <p><strong>Interests:</strong> Volleyball (Stäfa team captain 2021), Bassist in a jazz band<span class="cite">[cite: 3]</span></p>
+        </div>
+    </div>
+</body>
+</html>
