@@ -60,6 +60,15 @@
         .links a:hover {
             background: var(--accent);
         }
+        .quote {
+            font-style: italic;
+            color: var(--secondary);
+            margin-top: 25px;
+            padding: 15px;
+            border-left: 4px solid var(--accent);
+            background: var(--card-bg);
+            border-radius: 0 4px 4px 0;
+        }
         h2 {
             color: var(--accent);
             border-bottom: 1px solid var(--border);
@@ -73,6 +82,12 @@
             border-radius: 6px;
             margin-bottom: 20px;
             border: 1px solid var(--border);
+        }
+        .coursework {
+            background: transparent;
+            padding: 0 5px;
+            border: none;
+            margin-bottom: 30px;
         }
         .item h3 {
             margin: 0 0 5px 0;
@@ -114,6 +129,27 @@
             border: 1px solid var(--border);
             display: block;
         }
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .image-gallery img {
+            width: calc(50% - 7.5px);
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+        /* Mobile adjustment for gallery */
+        @media (max-width: 600px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+            .image-gallery img {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -126,27 +162,31 @@
                 <a href="https://www.linkedin.com/in/samuel-gair1234" target="_blank">LinkedIn</a>
                 <a href="https://github.com/Samuelisusername" target="_blank">GitHub</a>
             </div>
+            <div class="quote">
+                "What I cannot create, I do not understand." – Richard Feynman
+            </div>
         </header>
 
         <!-- Education -->
         <h2>Education</h2>
-        <div class="item">
+        <div class="item" style="margin-bottom: 10px;">
             <h3>ETH Zürich</h3>
             <div class="meta">
                 <span>MSc Computer Science (Major: Machine Intelligence, Minor: Data Management Systems)</span>
                 <span>Sep 2025 – Jul 2027</span>
             </div>
         </div>
-        <div class="item">
+        <div class="item" style="margin-bottom: 10px;">
             <h3>ETH Zürich</h3>
             <div class="meta">
-                <span>BSc Computer Science</span>
+                <span>BSc Computer Science (GPA: 5.1/6.0)</span>
                 <span>Sep 2022 – Jul 2025</span>
             </div>
-            <ul>
-                <li>GPA: 5.1/6.0</li>
-                <li>Relevant Coursework: Advanced Machine Learning, Large Language Models, Reliable and Trustworthy AI, Probabilistic AI, Big Data, Data Modelling and Databases, Parallel Programming, Systems Programming.</li>
-            </ul>
+        </div>
+        <div class="coursework">
+            <p style="margin: 0; color: var(--text); font-size: 0.95em;">
+                <strong>Relevant Coursework:</strong> Advanced Machine Learning, Large Language Models, Reliable and Trustworthy AI, Probabilistic AI, Big Data, Data Modelling and Databases, Parallel Programming, Systems Programming.
+            </p>
         </div>
 
         <!-- Research & Projects -->
@@ -159,8 +199,10 @@
                 <li>Achieved a 57.3% reduction in Mean Absolute Error by engineering a novel randomized algorithm modification, enabling models to effectively process highly variable, 10'000-dimensional data.</li>
                 <li>Architected a reproducible, end-to-end ML pipeline to support downstream personalized oncology research, resulting in a co-authored poster presentation at ECCB 2026.</li>
             </ul>
-            <!-- Replace 'proteomics.jpg' with your actual image filename -->
-            <img src="proteomics.jpg" alt="Proteomic Deconvolution Architecture" class="media-preview" onerror="this.style.display='none'">
+            <div class="image-gallery">
+                <img src="proteomics.png" alt="Proteomic Deconvolution Architecture" onerror="this.style.display='none'">
+                <img src="cancer_fracs.jpg" alt="Cancer Fractions Analysis" onerror="this.style.display='none'">
+            </div>
         </div>
 
         <div class="item">
@@ -187,7 +229,6 @@
                 <li>Architected a highly scalable, object-oriented simulation environment in C#, managing real-time entity states and pathfinding algorithms in game loops.</li>
                 <li>Designed and implemented custom graph algorithms for dynamic pathfinding and spatial optimization, ensuring high-performance execution and efficient memory management.</li>
             </ul>
-            <!-- Replace 'gameplay.gif' with your actual GIF filename. If using an MP4, change the <img> tag to a <video> tag -->
             <img src="gameplay.gif" alt="C# Game Development Gameplay" class="media-preview" onerror="this.style.display='none'">
         </div>
 
@@ -228,6 +269,3 @@
             <p><strong>Languages:</strong> English (native) | German (native) | French (B2) | Polish (B2)</p>
             <p><strong>Interests:</strong> Volleyball (Stäfa team captain 2021) | Bassist in a jazz band</p>
         </div>
-    </div>
-</body>
-</html>
