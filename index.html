@@ -129,13 +129,15 @@
             border: 1px solid var(--border);
             display: block;
         }
-        .image-gallery {
-            display: flex;
+.image-gallery {
+            display: grid;
+            grid-template-columns: 2fr 3fr; /* 2 parts left (40%), 3 parts right (60%) */
             gap: 15px;
             margin-top: 15px;
+            align-items: center; /* Vertically centers both images */
         }
         .image-gallery img {
-            width: calc(50% - 7.5px);
+            width: 100%;
             max-height: 250px;
             object-fit: cover;
             border-radius: 4px;
@@ -144,10 +146,7 @@
         /* Mobile adjustment for gallery */
         @media (max-width: 600px) {
             .image-gallery {
-                flex-direction: column;
-            }
-            .image-gallery img {
-                width: 100%;
+                grid-template-columns: 1fr; /* Stacks images vertically on small screens */
             }
         }
     </style>
