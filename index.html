@@ -129,6 +129,16 @@
             border: 1px solid var(--border);
             display: block;
         }
+        /* Dedicated styling for ultra-wide header/banner images */
+        .banner-preview {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 15px;
+            border: 1px solid var(--border);
+            display: block;
+            object-fit: contain;
+        }
         .image-gallery {
             display: grid;
             grid-template-columns: 2fr 3fr; 
@@ -185,8 +195,6 @@
             </div>
         </header>
 
-        
-
         <!-- Research & Projects -->
         <h2>Research & Engineering Projects</h2>
         
@@ -198,10 +206,14 @@
                 <li>Architected a reproducible, end-to-end ML pipeline to support downstream personalized oncology research.</li>
                 <li><strong>Published Poster Presentation:</strong> Co-authored benchmarking research accepted for presentation at the European Conference on Computational Biology (ECCB 2026).
                     <span class="publication-cite">
-                        Scheithauer, T., Sibilia, L., Herold, M., <strong>Gair, S.</strong>, et al. (2026). <em>"Benchmarking Deconvolution Tools for Proteomics Data"</em>. <a href="https://eccb2026.org/" target="_blank">[Conference Website]</a>
+                        Scheithauer, T., Sibilia L., Herold, M., <strong>Gair, S.</strong>, et al. (2026). <em>"Benchmarking Deconvolution Tools for Proteomics Data"</em>. <a href="https://eccb2026.org/" target="_blank">[Conference Website]</a>
                     </span>
                 </li>
             </ul>
+
+            <!-- Wide Banner Format for 1920x300 Aspect Ratio -->
+            <img src="eccb_poster_platform_1920x300.png" alt="ECCB 2026 Poster Banner" class="banner-preview" onerror="this.style.display='none'">
+
             <div class="image-gallery">
                 <img src="proteomics.png" alt="Proteomic Deconvolution Architecture" onerror="this.style.display='none'">
                 <img src="cancer_fracs.png" alt="Cancer Fractions Analysis" onerror="this.style.display='none'">
@@ -251,6 +263,7 @@
                 <li>Developed an end-to-end Scanpy and Harmony batch-correction pipeline, optimizing graph clustering via grid search.</li>
             </ul>
         </div>
+
         <!-- Education -->
         <h2>Education</h2>
         <div class="item" style="margin-bottom: 10px;">
