@@ -1,621 +1,305 @@
-please remove the cancer fracs image from this website <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Samuel Gair - Machine Learning & Software Engineer</title>
-
     <style>
-
         /* Modern Dark Theme for ML/SWE */
-
         :root {
-
             --bg: #0d1117;
-
             --text: #c9d1d9;
-
             --accent: #58a6ff;
-
             --secondary: #8b949e;
-
             --card-bg: #161b22;
-
             --border: #30363d;
-
             --tag-bg: #1f6feb;
-
         }
-
         body {
-
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
             background-color: var(--bg);
-
             color: var(--text);
-
             line-height: 1.6;
-
             margin: 0;
-
             padding: 0;
-
         }
-
         .container {
-
             max-width: 850px;
-
             margin: 0 auto;
-
             padding: 50px 20px;
-
         }
-
         header {
-
             text-align: left;
-
             margin-bottom: 40px;
-
             border-bottom: 1px solid var(--border);
-
             padding-bottom: 30px;
-
         }
-
         h1 {
-
             color: #ffffff;
-
             margin-bottom: 5px;
-
             font-size: 2.5em;
-
         }
-
         .subtitle {
-
             color: var(--accent);
-
             font-size: 1.2em;
-
             font-weight: 600;
-
             margin-top: 0;
-
             margin-bottom: 15px;
-
         }
-
         .links a {
-
             display: inline-block;
-
             margin-right: 15px;
-
             color: #ffffff;
-
             text-decoration: none;
-
             background: var(--border);
-
             padding: 6px 12px;
-
             border-radius: 4px;
-
             font-size: 0.9em;
-
             transition: background 0.2s;
-
+            margin-bottom: 5px;
         }
-
         .links a:hover {
-
             background: var(--accent);
-
         }
-
         .quote {
-
             font-style: italic;
-
             color: var(--secondary);
-
             margin-top: 25px;
-
             padding: 15px;
-
             border-left: 4px solid var(--accent);
-
             background: var(--card-bg);
-
             border-radius: 0 4px 4px 0;
-
         }
-
         h2 {
-
             color: var(--accent);
-
             border-bottom: 1px solid var(--border);
-
             padding-bottom: 8px;
-
             margin-top: 40px;
-
             font-size: 1.5em;
-
         }
-
         .item {
-
             background: var(--card-bg);
-
             padding: 20px;
-
             border-radius: 6px;
-
             margin-bottom: 20px;
-
             border: 1px solid var(--border);
-
         }
-
         .coursework {
-
             background: transparent;
-
             padding: 0 5px;
-
             border: none;
-
             margin-bottom: 30px;
-
         }
-
         .item h3 {
-
             margin: 0 0 5px 0;
-
             color: #ffffff;
-
             font-size: 1.2em;
-
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
         }
-
         .item h3 a {
-
             color: var(--accent);
-
             font-size: 0.8em;
-
             text-decoration: none;
-
             font-weight: normal;
-
         }
-
         .item h3 a:hover {
-
             text-decoration: underline;
-
         }
-
         .meta {
-
             display: flex;
-
             justify-content: space-between;
-
             color: var(--secondary);
-
             font-size: 0.9em;
-
             margin-bottom: 15px;
-
         }
-
         ul {
-
             margin: 0;
-
             padding-left: 20px;
-
         }
-
         li {
-
             margin-bottom: 8px;
-
         }
-
         .media-preview {
-
             width: 100%;
-
             max-height: 400px;
-
             object-fit: cover;
-
             border-radius: 4px;
-
             margin-top: 15px;
-
             border: 1px solid var(--border);
-
             display: block;
-
         }
-
         /* Dedicated styling for ultra-wide header/banner images */
-
         .banner-preview {
-
             width: 100%;
-
             height: auto;
-
             border-radius: 4px;
-
             margin-top: 15px;
-
             border: 1px solid var(--border);
-
             display: block;
-
             object-fit: contain;
-
         }
-
-        .image-gallery {
-
-            display: grid;
-
-            grid-template-columns: 2fr 3fr; 
-
-            gap: 15px;
-
-            margin-top: 15px;
-
-            align-items: center; 
-
-        }
-
-        .image-gallery img {
-
-            width: 100%;
-
-            max-height: 250px;
-
-            object-fit: cover;
-
-            border-radius: 4px;
-
-            border: 1px solid var(--border);
-
-        }
-
         
-
         .publication-cite {
-
             font-size: 0.9em;
-
             color: var(--secondary);
-
             margin-top: 4px;
-
             display: block;
-
             border-left: 2px solid var(--border);
-
             padding-left: 10px;
-
         }
-
         .publication-cite strong {
-
             color: #ffffff;
-
         }
-
         .publication-cite a {
-
             color: var(--accent);
-
             text-decoration: none;
-
         }
-
         .publication-cite a:hover {
-
             text-decoration: underline;
-
         }
-
-
-
-        @media (max-width: 600px) {
-
-            .image-gallery {
-
-                grid-template-columns: 1fr; 
-
-            }
-
-        }
-
     </style>
-
 </head>
-
 <body>
-
     <div class="container">
-
         <!-- Header -->
-
         <header>
-
             <h1>Samuel Gair</h1>
-
             <p class="subtitle">ETH Computer Science MSc | Machine Intelligence & Data Systems</p>
-
             <div class="links">
-
+                <a href="https://gair.ch" target="_blank">Portfolio Website</a>
+                <a href="mailto:samuel@gair.org">Email</a>
                 <a href="https://www.linkedin.com/in/samuel-gair1234" target="_blank">LinkedIn</a>
-
                 <a href="https://github.com/Samuelisusername" target="_blank">GitHub</a>
-
             </div>
-
             <div class="quote">
-
                 "The purpose of computing is insight, not numbers." – Richard Hamming
-
             </div>
-
         </header>
 
-
-
         <!-- Research & Projects -->
-
         <h2>Research & Engineering Projects</h2>
-
         
-
         <div class="item">
-
-            <h3>High-Dimensional Signal Deconvolution Research (Thesis) <a href="https://github.com/Samuelisusername/Proteomic-Deconvolution-Thesis" target="_blank">[View Code]</a></h3>
-
+            <h3>High-Dimensional Signal Deconvolution (Thesis) <a href="https://github.com/Samuelisusername/Proteomic-Deconvolution-Thesis" target="_blank">[View Code]</a></h3>
+            <div class="meta"><span>Grade: 5.5/6</span></div>
             <ul>
-
                 <li>Pioneered a Python/R machine learning framework for proteomic deconvolution, benchmarking adapted state-of-the-art models against custom algorithms to predict cell-type composition.</li>
-
-                <li>Achieved a <strong>57.3% reduction in Mean Absolute Error</strong> by engineering a novel randomized algorithm modification, enabling models to effectively process highly variable, 10'000-dimensional data.</li>
-
+                <li>Achieved a <strong>57.3% reduction in Mean Absolute Error (from 4.86% to 2.08%)</strong> by engineering a novel randomized algorithm modification, enabling models to effectively process highly variable, 10'000-dimensional data.</li>
                 <li>Architected a reproducible, end-to-end ML pipeline to support downstream personalized oncology research.</li>
-
                 <li><strong>Published Poster Presentation:</strong> Co-authored benchmarking research accepted for presentation at the European Conference on Computational Biology (ECCB 2026).
-
                     <span class="publication-cite">
-
                         Scheithauer, T., Sibilia L., Herold, M., <strong>Gair, S.</strong>, et al. (2026). <em>"Benchmarking Deconvolution Tools for Proteomics Data"</em>. <a href="https://eccb2026.org/" target="_blank">[Conference Website]</a>
-
                     </span>
-
                 </li>
-
             </ul>
-
-
 
             <!-- Wide Banner Format for 1920x300 Aspect Ratio -->
-
             <img src="Screenshot 2026-11-10 at 13.17.03.png" alt="ECCB 2026 Poster Banner" class="banner-preview" onerror="this.style.display='none'">
 
-
-
-            <div class="image-gallery">
-
-                <img src="proteomics.png" alt="Proteomic Deconvolution Architecture" onerror="this.style.display='none'">
-
-                <img src="cancer_fracs.png" alt="Cancer Fractions Analysis" onerror="this.style.display='none'">
-
-            </div>
-
+            <img src="proteomics.png" alt="Proteomic Deconvolution Architecture" class="media-preview" onerror="this.style.display='none'">
         </div>
 
-
-
         <div class="item">
-
-            <h3>Large Language Models & AI Safety <a href="https://github.com/Samuelisusername/Large-Language-Models" target="_blank">[View Code]</a></h3>
-
+            <h3>Large Language Models <a href="https://github.com/Samuelisusername/Large-Language-Models" target="_blank">[View Code]</a></h3>
             <ul>
-
-                <li>Engineered end-to-end Retrieval-Augmented Generation (RAG) pipelines in PyTorch and Hugging Face, building context-retrieval mechanisms to mitigate LLM hallucinations.</li>
-
-                <li>Executed PyTorch-based model-inversion attacks to reconstruct prompts from CLIP text embeddings, achieving >0.99 cosine similarity to bypass vision-language safety filters.</li>
-
-                <li>Developed stochastic local search algorithms against REST APIs to optimize adversarial token suffixes, successfully evading statistical LLM watermarks (p-value detection).</li>
-
+                <li>Engineered end-to-end Retrieval-Augmented Generation (RAG) pipelines in PyTorch and Hugging Face, building context-retrieval mechanisms (based on sBert embeddings and TF-IDF scores) to mitigate model hallucinations and answer accuracy.</li>
+                <li>Fine-tuned a 1.5B-parameter LLM (Qwen2.5) for mathematical reasoning using a Reinforcement Learning approach (Direct Preference Optimization) and LoRA, and implemented self-consistency decoding and calibration metrics (ECE) to evaluate and improve model accuracy on the GSM8K dataset.</li>
             </ul>
-
         </div>
 
-        
-
         <div class="item">
-
-            <h3>Advanced Machine Learning for Healthcare & Time-Series <a href="https://github.com/Samuelisusername/Interpretable_ML_for_healthcare" target="_blank">[View Code]</a></h3>
-
-            <ul>
-
-                <li><strong>Sparse Time-Series Architecture:</strong> Engineered imputation-free Transformers in PyTorch to process highly irregular (t, z, v) measurement triplets, automating feature extraction pipelines with tsfresh.</li>
-
-                <li><strong>Tabular Diagnostics & XAI:</strong> Built cardiac risk prediction models and evaluated non-linear feature attributions using SHAP and partial dependence curves.</li>
-
-                <li><strong>Computer Vision & Reliability:</strong> Developed a CNN to detect pneumonia from X-rays, utilizing Grad-CAM to map diagnostic pixel regions and label-shuffling to verify model integrity.</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="item">
-
-            <h3>Game Development with Object-Oriented Architecture <a href="https://github.com/Samuelisusername/DreamWard-Game" target="_blank">[View Code]</a></h3>
-
-            <ul>
-
-                <li>Architected a highly scalable, object-oriented simulation environment in C#, managing real-time entity states and pathfinding algorithms in game loops.</li>
-
-                <li>Designed and implemented custom graph algorithms for dynamic pathfinding and spatial optimization, ensuring high-performance execution and efficient memory management.</li>
-
-            </ul>
-
-            <img src="gameplay.gif" alt="C# Game Development Gameplay" class="media-preview" onerror="this.style.display='none'">
-
-        </div>
-
-
-
-        <div class="item">
-
-            <h3>Low-Level Systems & Concurrency</h3>
-
-            <ul>
-
-                <li><strong>x86 Virtual Memory Simulator (C):</strong> Engineered a paging simulator mapping multi-level page table translations (PML4, PDP, PT) and managing CR3 hardware register interactions. <a href="https://github.com/Samuelisusername/x86_paging" target="_blank">[Code]</a></li>
-
-                <li><strong>Concurrent Resource Management (Java):</strong> Built a thread-safe traffic simulation system utilizing ReentrantLock, semaphores, and monitors to prevent deadlocks under high concurrency. <a href="https://github.com/Samuelisusername/Parallel_Programming_Java" target="_blank">[Code]</a></li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="item">
-
-            <h3>Machine Learning for Genomics <a href="https://github.com/Samuelisusername/Machine-Learning-for-Genomics" target="_blank">[View Code]</a></h3>
-
+            <h3>Deep Generative Modelling and Representation Learning <a href="https://github.com/Samuelisusername/Machine-Learning-for-Genomics" target="_blank">[View Code]</a></h3>
             <div class="meta"><span>Top 10% Class Award</span></div>
-
             <ul>
-
-                <li>Built PyTorch deep generative models (scVI/scANVI) and NNLS regression pipelines to annotate ~50k single-cell profiles and deconvolve bulk RNA-seq samples.</li>
-
-                <li>Developed an end-to-end Scanpy and Harmony batch-correction pipeline, optimizing graph clustering via grid search.</li>
-
+                <li>Implemented PyTorch deep generative models (Variational Autoencoders) to learn highly compressed latent representations (embeddings) increasing the utility and performance of NNLS regression and semi-supervised classification on noisy and high dimensional RNA data (RMSE: 0.077).</li>
+                <li>Optimized the classification model with an unsupervised domain adaptation pipeline to align shifted data distributions, using KNN graph-clustering achieving a 0.79 ARI score.</li>
             </ul>
-
         </div>
 
+        <div class="item">
+            <h3>Multi-Domain Explainable AI (XAI) and Model Reliability <a href="https://github.com/Samuelisusername/Interpretable_ML_for_healthcare" target="_blank">[View Code]</a></h3>
+            <ul>
+                <li>Built interpretable risk-prediction models (Neural Additive Models, MLPs) for tabular data, mapping non-linear feature attributions via SHAP and partial dependence curves.</li>
+                <li>Ensured visual model reliability by developing CNNs with Grad-CAM for spatial pixel explainability and executing label-shuffling to audit against dataset memorization.</li>
+            </ul>
+        </div>
 
+        <div class="item">
+            <h3>AI Security Engineering</h3>
+            <ul>
+                <li>Executed PyTorch-based model-inversion attacks to reconstruct prompts from CLIP text embeddings, achieving > 0.99 cosine similarity to bypass vision-language safety filters.</li>
+                <li>Developed stochastic local search algorithms against REST APIs to optimize adversarial token suffixes, successfully evading statistical LLM watermarks (p-value detection).</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>Game Development with Object-Oriented Architecture <a href="https://github.com/Samuelisusername/DreamWard-Game" target="_blank">[View Code]</a></h3>
+            <ul>
+                <li>Architected a highly scalable, object-oriented simulation environment in C#, managing real-time entity states and pathfinding algorithms in game loops.</li>
+                <li>Designed and implemented custom graph algorithms for dynamic pathfinding and spatial optimization, ensuring high-performance execution and efficient memory management.</li>
+            </ul>
+            <img src="gameplay.gif" alt="C# Game Development Gameplay" class="media-preview" onerror="this.style.display='none'">
+        </div>
+
+        <div class="item">
+            <h3>Low-Level Systems & Concurrency</h3>
+            <ul>
+                <li><strong>x86 Virtual Memory Simulator (C):</strong> Engineered a paging simulator mapping multi-level page table translations (PML4, PDP, PT) and managing CR3 hardware register interactions. <a href="https://github.com/Samuelisusername/x86_paging" target="_blank">[Code]</a></li>
+                <li><strong>Concurrent Resource Management (Java):</strong> Built a thread-safe traffic simulation system utilizing ReentrantLock, semaphores, and monitors to prevent deadlocks under high concurrency. <a href="https://github.com/Samuelisusername/Parallel_Programming_Java" target="_blank">[Code]</a></li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>Time-Series Deep Learning and Transformers</h3>
+            <ul>
+                <li>Engineered imputation-free Transformers in PyTorch to process highly irregular (t, z, v) measurement triplets, automating sparse feature extraction pipelines with tsfresh.</li>
+            </ul>
+        </div>
 
         <!-- Education -->
-
         <h2>Education</h2>
-
         <div class="item" style="margin-bottom: 10px;">
-
             <h3>ETH Zürich</h3>
-
             <div class="meta">
-
                 <span>MSc Computer Science (Major: Machine Intelligence, Minor: Data Management Systems)</span>
-
                 <span>Sep 2025 – Jul 2027</span>
-
             </div>
-
         </div>
-
         <div class="item" style="margin-bottom: 10px;">
-
             <h3>ETH Zürich</h3>
-
             <div class="meta">
-
-                <span>BSc Computer Science </span>
-
+                <span>BSc Computer Science (Grade: 5.75/6)</span>
                 <span>Sep 2022 – Jul 2025</span>
-
             </div>
-
         </div>
-
         <div class="coursework">
-
             <p style="margin: 0; color: var(--text); font-size: 0.95em;">
-
-                <strong>Relevant Coursework:</strong> Advanced Machine Learning, Large Language Models, Reliable and Trustworthy AI, Probabilistic AI, Big Data, Data Modelling and Databases, Parallel Programming, Systems Programming.
-
+                <strong>Relevant Coursework:</strong> Advanced Machine Learning, Large Language Models, Reliable and Trustworthy AI, Probabilistic AI, Computational Intelligence Lab, Big Data, Data Modelling and Databases, Parallel Programming, Systems Programming and Computer Architecture, Numerical Methods for Computer Science.
             </p>
-
         </div>
-
-
 
         <!-- Skills -->
-
         <h2>Skills & Technologies</h2>
-
         <div class="item">
-
             <p><strong>Machine Learning & AI:</strong> Python, PyTorch, Transformers, Scikit-learn, XGBoost, NumPy, Pandas, SciPy, tsfresh, R, Apache Spark, Hadoop</p>
-
             <p><strong>Systems & Engineering:</strong> C/C++, Java, SQL, Unix/Linux, NoSQL</p>
-
         </div>
-
-
 
         <!-- Experience & Extras -->
-
         <h2>Experience & Details</h2>
-
         <div class="item">
-
             <h3>ETH Computer Science Library Assistant</h3>
-
             <div class="meta"><span>December 2024 – Present</span></div>
-
             <ul>
-
                 <li>Managed computer science literature, provided technical book recommendations, and directed library social media.</li>
-
             </ul>
-
         </div>
-
         <div class="item">
-
             <p><strong>Languages:</strong> English (native) | German (native) | French (B2) | Polish (B2)</p>
-
             <p><strong>Interests:</strong> Volleyball (Stäfa team captain 2021) | Bassist in a jazz band</p>
-
         </div>
-
     </div>
-
 </body>
-
-</html> 
+</html>
